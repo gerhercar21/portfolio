@@ -1,0 +1,25 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Working in muy portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gerhercar21/portfolio.git"
+  },
+  "keywords": [
+    "portfolio"
+  ],
+  "author": "Gerardo HC",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gerhercar21/portfolio/issues"
+  },
+  "homepage": "https://github.com/gerhercar21/portfolio#readme",
+  "dependencies": {
+    "sass": "^1.53.0"
+  }
+}

@@ -1,0 +1,69 @@
+body {
+  background-color: white;
+}
+body .navbar {
+  padding: 0;
+  text-align: center;
+}
+body .container-fluid {
+  background-color: #1E3E3E;
+  margin: 0;
+}
+body .container-fluid li {
+  padding: 0.5rem 6rem;
+}
+body .container-fluid a {
+  color: #F4F6F5;
+}
+body .container-fluid a:hover {
+  color: #F34044;
+}
+body .img-fondo {
+  background-image: url("https://images.rawpixel.com/image_1300/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvdXB3azYxOTA4Nzg3LXdpa2ltZWRpYS1pbWFnZS1rb3dlZW81Zi5qcGc.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+body .presentation {
+  padding: 20rem 10rem 10rem 10rem;
+}
+body .presentation h2 {
+  color: #1E3E3E;
+  font-family: "Inter", sans-serif;
+  text-transform: uppercase;
+  padding-left: 3rem;
+  font-size: 1.5rem;
+  letter-spacing: 0.5rem;
+  background-color: #F4F6F5;
+  opacity: 0.7;
+  border-radius: 0.3rem;
+}
+body .presentation h1 {
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-size: 2rem;
+  line-height: 1.5;
+  display: inline;
+}
+body .presentation .presentation-text {
+  background-color: #365A5A;
+  color: white;
+  padding-left: 0.3rem;
+  padding-right: 0.3rem;
+}
+body .about-me {
+  padding: 10rem 10rem;
+}
+body .about-me h3 {
+  font-family: "Inter", sans-serif;
+  text-transform: uppercase;
+  color: #1E3E3E;
+  padding-left: 3rem;
+}
+body .about-me h1 {
+  color: black;
+  font-family: "Inter", sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+/*# sourceMappingURL=output.css.map */

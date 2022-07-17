@@ -1,0 +1,82 @@
+@use  'global' as *;
+
+body {
+    background-color: white;
+
+    .navbar {
+        padding: 0;
+        text-align: center;
+    }
+
+    .container-fluid {
+        background-color: $dark-green;
+        margin: 0;
+
+        li {
+            padding: .5rem 6rem;
+        }
+
+        a {
+            color: $gray-scale;
+
+            &:hover {
+                color: $strong-letter;
+            }
+        }
+    }
+
+    .img-fondo {
+        background-image: url("https://images.rawpixel.com/image_1300/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvdXB3azYxOTA4Nzg3LXdpa2ltZWRpYS1pbWFnZS1rb3dlZW81Zi5qcGc.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .presentation {
+        padding: 20rem 10rem 10rem 10rem;
+
+        & h2 {
+            color: $dark-green;
+            font-family: $font-family;
+            text-transform: uppercase;
+            padding-left: 3rem;
+            font-size: 1.5rem;
+            letter-spacing: .5rem;
+            background-color: $gray-scale;
+            opacity: .7;
+            border-radius: .3rem;
+        }
+    
+        & h1 {
+            color: white;
+            font-family: $font-family;
+            font-size: 2rem;
+            line-height: 1.5;
+            display: inline;
+        }
+        
+        & .presentation-text {
+            background-color: $opacity-green;
+            color: white;
+            padding-left: .3rem;
+            padding-right: .3rem;
+        }
+    }
+
+    .about-me {
+        padding: 10rem 10rem;
+
+        & h3 {
+            font-family: $font-family;
+            text-transform: uppercase;
+            color: $dark-green;
+            padding-left: 3rem;
+        } 
+
+        & h1 {
+            color: black;
+            font-family: $font-family;
+            font-size: 1.5rem;
+            line-height: 1.5;
+        }
+    }
+}

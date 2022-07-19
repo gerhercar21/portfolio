@@ -61,6 +61,14 @@ body {
             padding: 0.5rem 2rem;
         }
 
+        & a {
+            color: white;
+
+            &:hover {
+                color: white;
+            }
+        }
+
         & button {
             color: white;
             background-color: $selector;
@@ -70,7 +78,7 @@ body {
             font-weight: 800;
 
             &:hover {
-                background-color: $light-blue;
+                opacity: .9;
             }
         }
     }

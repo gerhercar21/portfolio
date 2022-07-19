@@ -42,6 +42,12 @@ body .actions {
 body .actions > * {
   padding: 0.5rem 2rem;
 }
+body .actions a {
+  color: white;
+}
+body .actions a:hover {
+  color: white;
+}
 body .actions button {
   color: white;
   background-color: #816797;
@@ -51,7 +57,7 @@ body .actions button {
   font-weight: 800;
 }
 body .actions button:hover {
-  background-color: #43C6AC;
+  opacity: 0.9;
 }
 
 .publi-head {

@@ -1,9 +1,6 @@
 @use  'global' as *;
 
 body {
-    
-    background-color: white;
-
     .navbar {
         padding: 0;
 
@@ -90,6 +87,8 @@ body {
 
     &:before {
         position: absolute;
+        opacity: .7;
+        background-image: linear-gradient(to right, $dark-blue , $light-blue);
         content: "";
         top: 0;
         bottom: 0;

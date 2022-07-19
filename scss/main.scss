@@ -9,6 +9,10 @@ body {
         & .navbar-brand {
             margin-left: 1.5%;
         }
+
+        @media (max-width: 575px) {
+            text-align: center;
+        }
     }
 
     .dropdown-menu {
@@ -57,6 +61,10 @@ body {
         font-size: 14px;
         font-family: $font-family;
 
+        @media (max-width: 575px) {
+            text-align: center;
+        }
+
         & > * {
             padding: 0.5rem 2rem;
         }
@@ -87,6 +95,10 @@ body {
         display: flex;
         align-items: center;
         gap: 3rem;
+
+        @media (max-width: 575px) {
+            display: inline;
+        }
     }
     
     .presentation {
@@ -94,16 +106,29 @@ body {
         background-image: linear-gradient(to right, $dark-blue , $light-blue);
         overflow: hidden;
 
+        @media (max-width: 575px) {
+            padding: 8rem 1.5rem 1rem;
+        }
+
         .col-pres2 {
             width: 100%;
             position: relative;
             right: 5%;
             margin-right: -60%;
+
+            @media (max-width: 575px) {
+                overflow: hidden;
+                width: 150%;
+            }
         }
 
         .col-pres1 {
             width: 80%;
             max-width: 150%;
+
+            @media (max-width: 575px) {
+                width: 100%;
+            }
         }
 
 
@@ -113,6 +138,10 @@ body {
             text-transform: uppercase;
             font-size: 1.5rem;
             letter-spacing: .5rem;
+
+            @media (max-width: 575px) {
+                font-size: 1.2rem;
+            }
         }
     
         & h1 {
@@ -120,11 +149,19 @@ body {
             font-family: $font-family;
             font-size: 2.5rem;
             line-height: 1.5;
+
+            @media (max-width: 575px) {
+                font-size: 1.8rem;
+            }
         }
 
         & p {
             color: white;
             font-size: 1.5rem;
+
+            @media (max-width: 575px) {
+                font-size: 1.2rem;
+            }
         }
 
         & .button {
@@ -140,6 +177,13 @@ body {
             letter-spacing: .2rem;
             font-size: 12px;
             color: white;
+
+            @media (max-width: 575px) {
+                margin-top: .5rem;
+                margin-bottom: 2rem;
+                padding: .7rem 3rem;
+                width: 100%;
+            }
 
             & svg {
                 transition: .2s ease;
@@ -175,6 +219,10 @@ body {
             padding-left: 0;
             margin-left: 0;
             padding-right: 3rem;
+
+            @media (max-width: 575px) {
+                margin-top: 10%;
+            }
             
             & a svg {
                 fill: white;
@@ -219,6 +267,12 @@ body {
     .section-divider {
         fill: $gray-scale;
         background-image: linear-gradient(to right, $dark-blue , $light-blue);
+
+        svg {
+            @media (max-width: 575px) {
+                padding-top: 1rem;
+            }
+        }
     }
 
     .about-me {
@@ -229,6 +283,14 @@ body {
         justify-content: space-around;
         gap: 5rem;
         align-items: center;
+
+        @media (max-width: 575px) {
+            padding: 3rem 1rem 0;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        // Revisar de 194 a 315 a ver si sí son indispensables
 
         & h3 {
             font-family: $font-family;
@@ -261,6 +323,11 @@ body {
                 line-height: 61px;
                 color: #816797;
                 padding-bottom: 1rem;
+
+                @media (max-width: 575px) {
+                    font-size: 2rem;
+                    padding-bottom: 0;
+                }
             }
 
             & p {
@@ -270,6 +337,10 @@ body {
                 margin-bottom: 1rem;
                 text-align: justify;
                 font-family: Arial, Helvetica, sans-serif;
+                
+                @media (max-width: 575px) {
+                    font-size: 1rem;
+                }
             }
         }
 
@@ -296,7 +367,12 @@ body {
                         border-top-left-radius: .8rem;
                         border-top-right-radius: .8rem;
                         object-fit: cover;
+
+                        @media (max-width: 575px) {
+                            max-height: 100%;
+                        }
                     }
+
                     &::before {
                         position: absolute;
                         content: "";
@@ -363,6 +439,17 @@ body {
         margin: 0;
         background-color: $gray-scale;
 
+        @media (max-width: 575px) {
+            padding: 2rem 1rem 5.5rem 1rem;
+        }
+
+        & .row {
+            @media (max-width: 575px) {
+                flex-direction: column;
+                gap: 2rem;
+            }
+        }
+
         & h2 {
             font-family: $font-family;
             color: #37474f;
@@ -419,20 +506,15 @@ body {
     background-color: $dark-background;
 
     @media (max-width: 575px) {
-        padding: 3% 6% 10%;
-        margin-top: 10%;
+        text-align: center;
+    }
+
+    @media (max-width: 575px) {
+        padding: 3% 6% 25%;
         
         .row {
             flex-direction: column;
         }        
-    }
-
-    @media (min-width: 576px) and (max-width: 991px) {
-        padding: 5% 3% 2%;
-
-        .row {
-            --bs-gutter-x: .5rem
-        }
     }
 
     h2 {
@@ -442,7 +524,6 @@ body {
 
         @media (max-width: 575px) {
             font-size: 1.3rem;
-            text-align: center;
         }
 
         @media (min-width: 576px) and (max-width: 991px) {

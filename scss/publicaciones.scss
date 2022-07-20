@@ -171,12 +171,17 @@ body {
             padding-left: 2rem;
 
             @media (max-width: 575px) {
-                padding-left: .8rem;
+                padding-left: 0;
             }
         }
     }
 
     .social-media::before {
+
+        @media (max-width: 575px) {
+            width: 200%;
+        }
+
         display: block;
         content: "";
         height: 1px;
@@ -189,6 +194,12 @@ body {
     }
 
     .social-media::after {
+
+        @media (max-width: 575px) {
+            width: 200%;
+            right: 0;
+        }
+        
         display: block;
         content: "";
         height: 1px;
@@ -348,6 +359,69 @@ body {
             }
         }
     }
+}
+
+
+.eventos {
+    padding: 5rem;
+    background-color: $dark-background;
+    display: flex;
+    gap: 4rem;
+    font-family: $font-family;
+
+    @media (max-width: 575px) {
+        padding: 2rem;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .eventos-body {
+        width: 80%;
+        text-align: justify;
+
+        @media (max-width: 575px) {
+            width: 100%;
+        }
+
+        h2 {
+            color: $light-blue;
+
+            @media (max-width: 575px) {
+                font-size: 1rem;
+            }
+        }
+
+        h5 {
+            color: $gray-scale;
+            line-height: 1.7;
+
+            @media (max-width: 575px) {
+                font-size: .7rem;
+            }
+        }
+
+        img {
+            width: 72%;
+
+            @media (max-width: 575px) {
+                width: 80%;
+                padding-left: 20%;
+                padding-bottom: 10%;
+            }
+        }
+    }
+
+    .carousel {
+        width: 80%;
+
+        @media (max-width: 575px) {
+            width: 100%;
+        }
+    }
+}
+
+.divider {
+    background-image: linear-gradient(to bottom, $dark-background , $gray-scale);
 }
 
 .footer {

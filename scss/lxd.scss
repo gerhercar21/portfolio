@@ -110,22 +110,25 @@ body {
 .presentation {
     padding: 8rem 8rem 2rem 8rem;
     background-image: linear-gradient(to right, $dark-blue , $light-blue);
+    overflow: hidden;
 
     @media (max-width: 575px) {
         padding: 8rem 1.5rem 1rem;
     }
 
     .col-pres2 {
-        margin-left: -30%;
+        margin-left: -20%;
 
         & svg {
-            fill: $selector;
-            width: 500%;
-            height: 300%;
 
             @media (max-width: 575px) {
-                width: 100%;
+                width: 60%;
+                margin-left: 38%;
             }
+
+            fill: $selector;
+            width: 400%;
+            height: 200%;
         }
 
         @media (max-width: 575px) {
@@ -147,14 +150,15 @@ body {
         font-family: $font-family;
         font-size: 2.5rem;
         line-height: 1;
+        width: 80%;
+
+        @media (max-width: 575px) {
+            font-size: 1.4rem;
+            width: 100%;
+        }
 
         & svg {
             color: $light-blue;
-        }
-
-        @media (max-width: 575px) {
-            font-size: 1.8rem;
-            width: 60%;
         }
     }
 
@@ -195,12 +199,17 @@ body {
             padding-left: 2rem;
             
             @media (max-width: 575px) {
-                padding-left: .8rem;
+                padding-left: 0;
             }
         }
     }
 
     .social-media::before {
+
+        @media (max-width: 575px) {
+            width: 200%;
+        }
+
         display: block;
         content: "";
         height: 1px;
@@ -213,6 +222,12 @@ body {
     }
 
     .social-media::after {
+
+        @media (max-width: 575px) {
+            width: 200%;
+            right: 0;
+        }
+        
         display: block;
         content: "";
         height: 1px;

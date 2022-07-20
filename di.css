@@ -92,6 +92,7 @@ body .actions button:hover {
 .presentation {
   padding: 8rem 8rem 2rem 8rem;
   background-image: linear-gradient(to right, #182227, #43C6AC);
+  overflow: hidden;
 }
 @media (max-width: 575px) {
   .presentation {
@@ -108,7 +109,8 @@ body .actions button:hover {
 }
 @media (max-width: 575px) {
   .presentation .col-pres2 svg {
-    width: 100%;
+    width: 80%;
+    margin-left: 20%;
   }
 }
 @media (max-width: 575px) {
@@ -131,14 +133,14 @@ body .actions button:hover {
   font-size: 2.5rem;
   line-height: 1;
 }
-.presentation h1 svg {
-  color: #43C6AC;
-}
 @media (max-width: 575px) {
   .presentation h1 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     width: 60%;
   }
+}
+.presentation h1 svg {
+  color: #43C6AC;
 }
 .presentation .social-media {
   width: 100%;
@@ -164,21 +166,21 @@ body .actions button:hover {
   width: 100%;
   height: 100%;
 }
-.presentation .social-media a svg:hover {
-  fill: #191654;
-}
 @media (max-width: 575px) {
   .presentation .social-media a svg {
     width: 60%;
     height: 60%;
   }
 }
+.presentation .social-media a svg:hover {
+  fill: #191654;
+}
 .presentation .social-media #GitHub {
   padding-left: 2rem;
 }
 @media (max-width: 575px) {
   .presentation .social-media #GitHub {
-    padding-left: 0.8rem;
+    padding-left: 0;
   }
 }
 .presentation .social-media::before {
@@ -192,6 +194,11 @@ body .actions button:hover {
   top: 1rem;
   right: 1rem;
 }
+@media (max-width: 575px) {
+  .presentation .social-media::before {
+    width: 200%;
+  }
+}
 .presentation .social-media::after {
   display: block;
   content: "";
@@ -202,6 +209,12 @@ body .actions button:hover {
   position: relative;
   top: 1rem;
   right: -1rem;
+}
+@media (max-width: 575px) {
+  .presentation .social-media::after {
+    width: 200%;
+    right: 0;
+  }
 }
 
 .section-divider {

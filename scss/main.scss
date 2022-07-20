@@ -145,7 +145,8 @@ body {
             letter-spacing: .5rem;
 
             @media (max-width: 575px) {
-                font-size: 1.2rem;
+                font-size: 1rem;
+                letter-spacing: .2rem;
             }
         }
     
@@ -156,7 +157,7 @@ body {
             line-height: 1.5;
 
             @media (max-width: 575px) {
-                font-size: 1.8rem;
+                font-size: 1.4rem;
             }
         }
 
@@ -165,7 +166,7 @@ body {
             font-size: 1.5rem;
 
             @media (max-width: 575px) {
-                font-size: 1.2rem;
+                font-size: 1rem;
             }
         }
 
@@ -249,12 +250,17 @@ body {
                 padding-left: 2rem;
                 
                 @media (max-width: 575px) {
-                    padding-left: .8rem;
+                    padding-left: 0;
                 }
             }
         }
 
         .social-media::before {
+
+            @media (max-width: 575px) {
+                width: 200%;
+            }
+            
             display: block;
             content: "";
             height: 1px;
@@ -267,6 +273,12 @@ body {
         }
 
         .social-media::after {
+
+            @media (max-width: 575px) {
+                width: 200%;
+                right: 0;
+            }
+
             display: block;
             content: "";
             height: 1px;

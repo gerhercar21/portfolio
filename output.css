@@ -128,7 +128,8 @@ body .presentation h2 {
 }
 @media (max-width: 575px) {
   body .presentation h2 {
-    font-size: 1.2rem;
+    font-size: 1rem;
+    letter-spacing: 0.2rem;
   }
 }
 body .presentation h1 {
@@ -139,7 +140,7 @@ body .presentation h1 {
 }
 @media (max-width: 575px) {
   body .presentation h1 {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
   }
 }
 body .presentation p {
@@ -148,7 +149,7 @@ body .presentation p {
 }
 @media (max-width: 575px) {
   body .presentation p {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 }
 body .presentation .button {
@@ -227,7 +228,7 @@ body .presentation .social-media #GitHub {
 }
 @media (max-width: 575px) {
   body .presentation .social-media #GitHub {
-    padding-left: 0.8rem;
+    padding-left: 0;
   }
 }
 body .presentation .social-media::before {
@@ -241,6 +242,11 @@ body .presentation .social-media::before {
   top: 1rem;
   right: 1rem;
 }
+@media (max-width: 575px) {
+  body .presentation .social-media::before {
+    width: 200%;
+  }
+}
 body .presentation .social-media::after {
   display: block;
   content: "";
@@ -251,6 +257,12 @@ body .presentation .social-media::after {
   position: relative;
   top: 1rem;
   right: -1rem;
+}
+@media (max-width: 575px) {
+  body .presentation .social-media::after {
+    width: 200%;
+    right: 0;
+  }
 }
 body .section-divider {
   fill: #F4F6F5;

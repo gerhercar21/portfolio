@@ -85,13 +85,14 @@ body .actions button:hover {
 @media (max-width: 575px) {
   .columns-pres {
     display: inline-flex;
-    margin-bottom: 15%;
+    margin-bottom: 10%;
   }
 }
 
 .presentation {
   padding: 8rem 8rem 2rem 8rem;
   background-image: linear-gradient(to left bottom, #191654, #43C6AC);
+  overflow: hidden;
 }
 @media (max-width: 575px) {
   .presentation {
@@ -108,7 +109,8 @@ body .actions button:hover {
 }
 @media (max-width: 575px) {
   .presentation .col-pres2 svg {
-    width: 100%;
+    width: 80%;
+    margin-left: 20%;
   }
 }
 @media (max-width: 575px) {
@@ -131,13 +133,13 @@ body .actions button:hover {
   font-size: 2.5rem;
   line-height: 1;
 }
-.presentation h1 svg {
-  color: #191654;
-}
 @media (max-width: 575px) {
   .presentation h1 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
+}
+.presentation h1 svg {
+  color: #191654;
 }
 .presentation .social-media {
   width: 100%;
@@ -177,7 +179,7 @@ body .actions button:hover {
 }
 @media (max-width: 575px) {
   .presentation .social-media #GitHub {
-    padding-left: 0.8rem;
+    padding-left: 0;
   }
 }
 .presentation .social-media::before {
@@ -191,6 +193,11 @@ body .actions button:hover {
   top: 1rem;
   right: 1rem;
 }
+@media (max-width: 575px) {
+  .presentation .social-media::before {
+    width: 200%;
+  }
+}
 .presentation .social-media::after {
   display: block;
   content: "";
@@ -201,6 +208,12 @@ body .actions button:hover {
   position: relative;
   top: 1rem;
   right: -1rem;
+}
+@media (max-width: 575px) {
+  .presentation .social-media::after {
+    width: 200%;
+    right: 0;
+  }
 }
 
 .section-divider {
@@ -218,8 +231,11 @@ body .actions button:hover {
 }
 @media (max-width: 575px) {
   .edev {
-    padding: 2rem;
+    padding: 3rem 2rem;
   }
+}
+.edev .match-columns {
+  flex-direction: row-reverse;
 }
 .edev .edev-proyectos {
   display: flex;
@@ -229,26 +245,43 @@ body .actions button:hover {
 }
 @media (max-width: 575px) {
   .edev .edev-proyectos {
-    gap: 1rem;
+    gap: 0;
+    flex-direction: column;
   }
 }
-.edev .edev-proyectos h2 {
-  font-family: "Inter", sans-serif;
-  color: #43C6AC;
+.edev .edev-proyectos .edev-example-body {
+  width: 70%;
+  text-align: justify;
 }
 @media (max-width: 575px) {
-  .edev .edev-proyectos h2 {
+  .edev .edev-proyectos .edev-example-body {
+    width: 100%;
+  }
+}
+.edev .edev-proyectos .edev-example-body h2 {
+  font-family: "Inter", sans-serif;
+  color: #43C6AC;
+  font-size: 1.5rem;
+  text-align: center;
+  padding-bottom: 0.7rem;
+}
+@media (max-width: 575px) {
+  .edev .edev-proyectos .edev-example-body h2 {
     font-size: 1rem;
   }
 }
-.edev .edev-proyectos h4 {
+.edev .edev-proyectos .edev-example-body h4 {
   font-family: "Inter", sans-serif;
   font-size: 150%;
+  font-size: 1.3rem;
 }
 @media (max-width: 575px) {
-  .edev .edev-proyectos h4 {
+  .edev .edev-proyectos .edev-example-body h4 {
     font-size: 0.7rem;
   }
+}
+.edev .edev-proyectos .edev-example {
+  width: 150%;
 }
 
 .footer {

@@ -7,10 +7,19 @@ body {
         & .navbar-brand {
             margin-left: 1.5%;
         }
+
+        @media (max-width: 575px) {
+            text-align: center;
+        }
     }
 
     .dropdown-menu {
         background-color: $dark-background;
+        
+        @media (max-width: 575px) {
+            text-align: center;
+            background-color: #2d4049;
+        }
 
         li {
             
@@ -55,6 +64,10 @@ body {
         font-size: 14px;
         font-family: $font-family;
 
+        @media (max-width: 575px) {
+            text-align: center;
+        }
+
         & > * {
             padding: 0.5rem 2rem;
         }
@@ -82,14 +95,13 @@ body {
     }
 }
 
-.section-divider {
-    fill: $gray-scale;
-    background-image: linear-gradient(to right, $dark-background , $light-blue);
-}
-
 .publi-head {
     background-image: linear-gradient(to right, $dark-background , $light-blue);
     padding: 10rem 5rem 3rem 5rem;
+
+    @media (max-width: 575px) {
+        padding: 8rem 1.5rem 1rem;
+    }
 
     & .presentation {
         display: flex;
@@ -102,6 +114,10 @@ body {
             padding-bottom: 2rem;
             text-align: left;
             font-size: 2rem;
+
+            @media (max-width: 575px) {
+                font-size: 1rem;
+            }
 
             & svg {
                 color: $light-blue;
@@ -130,11 +146,21 @@ body {
         padding-left: 0;
         margin-left: 0;
         padding-right: 3rem;
+
+        @media (max-width: 575px) {
+            margin-top: 15%;
+            padding-right: 0;
+        }
         
         & a svg {
             fill: white;
             width: 100%;
             height: 100%;
+
+            @media (max-width: 575px) {
+                width: 60%;
+                height: 60%;
+            }
 
             &:hover {
                 fill: $dark-blue;
@@ -143,6 +169,10 @@ body {
 
         #GitHub {
             padding-left: 2rem;
+
+            @media (max-width: 575px) {
+                padding-left: .8rem;
+            }
         }
     }
 
@@ -169,13 +199,27 @@ body {
         top: 1rem;
         right: -1rem;
     }
+}
 
+.section-divider {
+    fill: $gray-scale;
+    background-image: linear-gradient(to right, $dark-background , $light-blue);
+    
+    svg {
+        @media (max-width: 575px) {
+            padding-top: 1rem;
+        }
+    }
 }
 
 .publi-back {
     padding: 5rem 10rem 7.5rem;
     background-color: $gray-scale;
     overflow: hidden;
+
+    @media (max-width: 575px) {
+        padding: 1rem;
+    }
 
     .deco-dots {
         svg {
@@ -195,7 +239,7 @@ body {
         max-width: unset;
     
         @media (max-width: 575px) {
-            padding: 5% 10% 18% 10%;
+            padding: 5% 5% 0 5%;
         }
     
         @media (min-width: 576px) and (max-width: 991px) {
@@ -211,6 +255,10 @@ body {
         }
     
         .row {
+            @media (max-width: 575px) {
+                gap: 2rem;
+            }
+
             @media (min-width: 576px) and (max-width: 991px) {
                 flex-direction: row;
             }
@@ -276,10 +324,14 @@ body {
                 color: $dark-blue;
                 font-size: .9rem;
                 margin: 1rem 0 1rem 1.3rem;
-    
-                @media (min-width: 576px) and (max-width: 991px) {
-                    font-size: 12px;
+
+                @media (max-width: 575px) {
+                    margin-bottom: 0;
                 }
+    
+                    @media (min-width: 576px) and (max-width: 991px) {
+                        font-size: 12px;
+                    }
                 }
             }
     
@@ -305,9 +357,12 @@ body {
     background-color: $dark-background;
 
     @media (max-width: 575px) {
-        padding: 3% 6% 10%;
-        margin-top: 10%;
-        
+        text-align: center;
+    }
+
+    @media (max-width: 575px) {
+        padding: 3% 6% 25%;
+
         .row {
             flex-direction: column;
         }        
@@ -328,7 +383,6 @@ body {
 
         @media (max-width: 575px) {
             font-size: 1.3rem;
-            text-align: center;
         }
 
         @media (min-width: 576px) and (max-width: 991px) {

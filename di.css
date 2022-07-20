@@ -227,6 +227,58 @@ body .actions button:hover {
   }
 }
 
+.di {
+  padding: 5rem;
+}
+@media (max-width: 575px) {
+  .di {
+    padding: 3rem 2rem;
+  }
+}
+.di .di-proyectos {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  padding-bottom: 8%;
+}
+@media (max-width: 575px) {
+  .di .di-proyectos {
+    gap: 0;
+    flex-direction: column;
+  }
+}
+.di .di-proyectos .di-example-body {
+  width: 70%;
+  text-align: justify;
+}
+@media (max-width: 575px) {
+  .di .di-proyectos .di-example-body {
+    width: 100%;
+  }
+}
+.di .di-proyectos .di-example-body h2 {
+  font-family: "Inter", sans-serif;
+  color: #43C6AC;
+  font-size: 1.5rem;
+  text-align: center;
+  padding-bottom: 0.7rem;
+}
+@media (max-width: 575px) {
+  .di .di-proyectos .di-example-body h2 {
+    font-size: 1rem;
+  }
+}
+.di .di-proyectos .di-example-body h4 {
+  font-family: "Inter", sans-serif;
+  font-size: 150%;
+  font-size: 1.3rem;
+}
+@media (max-width: 575px) {
+  .di .di-proyectos .di-example-body h4 {
+    font-size: 0.7rem;
+  }
+}
+
 .footer {
   padding: 3% 5% 2%;
   margin: 0;

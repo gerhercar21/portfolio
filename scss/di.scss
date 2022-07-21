@@ -251,6 +251,74 @@ body {
     }
 }
 
+.header {
+    padding: 7rem;
+    text-align: center;
+    font-family: $font-family;
+    display: flex;
+    flex-direction: column;
+    color: $gray-scale;
+
+    @media (max-width: 575px) {
+        padding: 3rem;
+    }
+
+    & .header-col1 {
+        padding-top: 4rem;
+        background-color: #2d4049;
+        border-top-left-radius: 3vh;
+        border-top-right-radius: 3vh;
+
+        @media (max-width: 575px) {
+            padding-top: 2rem;
+        }
+
+        h4 {
+            @media (max-width: 575px) {
+                font-size: 1rem;
+                margin-bottom: 1.6rem;
+            }
+        }
+
+        h1 {
+            @media (max-width: 575px) {
+                font-size: 1.6rem;
+            }
+        }
+
+        br {
+            @media (max-width: 575px) {
+                display: none;
+            }
+        }
+
+        svg {
+            width: 100%;
+            color: $light-blue;
+        }
+    }
+
+    & .header-col2 {
+        background-color: #2d4049;
+        padding-top: 3rem;
+        border-bottom-left-radius: 3vh;
+        border-bottom-right-radius: 3vh;
+
+        @media (max-width: 575px) {
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+        }
+
+        img {
+            width: 40%;
+
+            @media (max-width: 575px) {
+                width: 60%;
+            }
+        }
+    }
+}
+
 .di-head {
     margin: 0;
     padding: 0;
@@ -294,11 +362,30 @@ body {
 
             @media (max-width: 575px) {
                 width: 100%;
+                padding: 1rem
             }
 
             ul {
                 padding: 1rem;
                 list-style: none;
+
+                @media (max-width: 575px) {
+                    padding: .7rem;
+                }
+
+                li {
+                    h3 {
+                        @media (max-width: 575px) {
+                            font-size: 1.2rem;
+                        }
+                    }
+
+                    p {
+                        @media (max-width: 575px) {
+                            font-size: .8rem;
+                        }
+                    }
+                }
             }
         }
 
@@ -317,6 +404,11 @@ body {
         & .padding-bottom-md {
             padding-bottom: 1.5rem;
             padding-top: 1.5rem;
+
+            @media (max-width: 575px) {
+                padding-bottom: .7rem;
+                padding-top: .7rem;
+            }
         }
     }
 }

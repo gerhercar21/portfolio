@@ -227,6 +227,71 @@ body .actions button:hover {
   }
 }
 
+.header {
+  padding: 7rem;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  display: flex;
+  flex-direction: column;
+  color: #F4F6F5;
+}
+@media (max-width: 575px) {
+  .header {
+    padding: 3rem;
+  }
+}
+.header .header-col1 {
+  padding-top: 4rem;
+  background-color: #2d4049;
+  border-top-left-radius: 3vh;
+  border-top-right-radius: 3vh;
+}
+@media (max-width: 575px) {
+  .header .header-col1 {
+    padding-top: 2rem;
+  }
+}
+@media (max-width: 575px) {
+  .header .header-col1 h4 {
+    font-size: 1rem;
+    margin-bottom: 1.6rem;
+  }
+}
+@media (max-width: 575px) {
+  .header .header-col1 h1 {
+    font-size: 1.6rem;
+  }
+}
+@media (max-width: 575px) {
+  .header .header-col1 br {
+    display: none;
+  }
+}
+.header .header-col1 svg {
+  width: 100%;
+  color: #43C6AC;
+}
+.header .header-col2 {
+  background-color: #2d4049;
+  padding-top: 3rem;
+  border-bottom-left-radius: 3vh;
+  border-bottom-right-radius: 3vh;
+}
+@media (max-width: 575px) {
+  .header .header-col2 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+}
+.header .header-col2 img {
+  width: 40%;
+}
+@media (max-width: 575px) {
+  .header .header-col2 img {
+    width: 60%;
+  }
+}
+
 .di-head {
   margin: 0;
   padding: 0;
@@ -272,11 +337,27 @@ body .actions button:hover {
 @media (max-width: 575px) {
   .di-head .di-content .di-content-list {
     width: 100%;
+    padding: 1rem;
   }
 }
 .di-head .di-content .di-content-list ul {
   padding: 1rem;
   list-style: none;
+}
+@media (max-width: 575px) {
+  .di-head .di-content .di-content-list ul {
+    padding: 0.7rem;
+  }
+}
+@media (max-width: 575px) {
+  .di-head .di-content .di-content-list ul li h3 {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 575px) {
+  .di-head .di-content .di-content-list ul li p {
+    font-size: 0.8rem;
+  }
 }
 .di-head .di-content .text-md::before {
   content: "";
@@ -292,6 +373,12 @@ body .actions button:hover {
 .di-head .di-content .padding-bottom-md {
   padding-bottom: 1.5rem;
   padding-top: 1.5rem;
+}
+@media (max-width: 575px) {
+  .di-head .di-content .padding-bottom-md {
+    padding-bottom: 0.7rem;
+    padding-top: 0.7rem;
+  }
 }
 
 .di {

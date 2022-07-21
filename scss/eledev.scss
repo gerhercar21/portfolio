@@ -100,6 +100,11 @@ body {
     align-items: center;
     gap: 3rem;
     width: 100%;
+
+    @media (max-width: 575px) {
+        display: inline-flex;
+        margin-bottom: 10%;
+    }
 }
 
 .presentation {
@@ -107,23 +112,44 @@ body {
     background-image: linear-gradient(to left bottom, $dark-blue , $light-blue);
     overflow: hidden;
 
+    @media (max-width: 575px) {
+        padding: 8rem 1.5rem 1rem;
+    }
+
     .col-pres2 {
         margin-left: -30%;
 
         & svg {
 
+            @media (max-width: 575px) {
+                width: 80%;
+                margin-left: 20%;
+            }
+
             fill: $selector;
             width: 500%;
             height: 300%;
+        }
+
+        @media (max-width: 575px) {
+            overflow: hidden;
         }
     }
 
     .col-pres1 {
         width: 80%;
         max-width: 150%;
+
+        @media (max-width: 575px) {
+            width: 100%;
+        }
     }
 
     & h1 {
+
+        @media (max-width: 575px) {
+            font-size: 1.5rem;
+        }
         
         color: white;
         font-family: $font-family;
@@ -147,6 +173,11 @@ body {
         padding-left: 0;
         margin-left: 0;
         padding-right: 3rem;
+
+        @media (max-width: 575px) {
+            margin-top: 10%;
+            padding-right: 0;
+        }
         
         & a svg {
             fill: white;
@@ -156,14 +187,28 @@ body {
             &:hover {
                 fill: $dark-blue;
             }
+
+            @media (max-width: 575px) {
+                width: 60%;
+                height: 60%;
+            }
         }
 
         #GitHub {
             padding-left: 2rem;
+
+            @media (max-width: 575px) {
+                padding-left: 0;
+            }
         }
     }
 
     .social-media::before {
+
+        @media (max-width: 575px) {
+            width: 200%;
+        }
+        
         display: block;
         content: "";
         height: 1px;
@@ -176,6 +221,11 @@ body {
     }
 
     .social-media::after {
+
+        @media (max-width: 575px) {
+            width: 200%;
+            right: 0;
+        }
 
         display: block;
         content: "";
@@ -470,89 +520,6 @@ body {
 
         @media (min-width: 576px) and (max-width: 991px) {
             margin-left: 5%;
-        }
-    }
-}
-
-
-// Media queries
-body {
-
-    .columns-pres {
-    
-        @media (max-width: 575px) {
-            display: inline-flex;
-            margin-bottom: 10%;
-        }
-    }
-
-    .presentation {
-    
-        @media (max-width: 575px) {
-            padding: 8rem 1.5rem 1rem;
-        }
-    
-        .col-pres2 {    
-            & svg {
-    
-                @media (max-width: 575px) {
-                    width: 80%;
-                    margin-left: 20%;
-                }
-            }
-    
-            @media (max-width: 575px) {
-                overflow: hidden;
-            }
-        }
-    
-        .col-pres1 {
-    
-            @media (max-width: 575px) {
-                width: 100%;
-            }
-        }
-    
-        & h1 {
-    
-            @media (max-width: 575px) {
-                font-size: 1.5rem;
-            }
-        }
-    
-        & .social-media {
-            @media (max-width: 575px) {
-                margin-top: 10%;
-                padding-right: 0;
-            }
-            
-            & a svg {
-                @media (max-width: 575px) {
-                    width: 60%;
-                    height: 60%;
-                }
-            }
-    
-            #GitHub {    
-                @media (max-width: 575px) {
-                    padding-left: 0;
-                }
-            }
-        }
-    
-        .social-media::before {
-    
-            @media (max-width: 575px) {
-                width: 200%;
-            }
-        }
-    
-        .social-media::after {
-    
-            @media (max-width: 575px) {
-                width: 200%;
-                right: 0;
-            }
         }
     }
 }

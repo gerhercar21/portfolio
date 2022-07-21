@@ -232,7 +232,7 @@ body .actions button:hover {
 }
 @media (max-width: 575px) {
   .di {
-    padding: 3rem 2rem;
+    padding: 3rem 1.5rem;
   }
 }
 .di .di-proyectos {
@@ -276,6 +276,12 @@ body .actions button:hover {
 @media (max-width: 575px) {
   .di .di-proyectos .di-example-body h4 {
     font-size: 0.7rem;
+  }
+}
+@media (max-width: 575px) {
+  .di .di-proyectos iframe {
+    width: 50%;
+    height: 50%;
   }
 }
 

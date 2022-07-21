@@ -251,6 +251,76 @@ body {
     }
 }
 
+.di-head {
+    margin: 0;
+    padding: 0;
+
+    & .di-content {
+        display: flex;
+        flex-direction: row;
+        font-family: $font-family;
+
+        @media (max-width: 575px) {
+            flex-direction: column;
+        }
+
+        & .di-content-text {
+            width: 50%;
+            padding: 2rem;
+            background-image: linear-gradient(to right, $dark-background , $selector);
+            color: white;
+            display: flex;
+            align-items: center;
+
+            @media (max-width: 575px) {
+                width: 100%;
+            }
+
+            h6 {
+                font-size: 25px;
+                width: 90%;
+
+                @media (max-width: 575px) {
+                    font-size: 1rem;
+                    width: 100%;
+                }
+            }
+        }
+
+        & .di-content-list {
+            width: 50%;
+            padding: 2rem;
+            background-color: $gray-scale;
+
+            @media (max-width: 575px) {
+                width: 100%;
+            }
+
+            ul {
+                padding: 1rem;
+                list-style: none;
+            }
+        }
+
+        & .text-md::before {
+            content: "";
+            height: 2px;
+            width: 100%;
+            background-color: $dark-blue;
+            opacity: .5;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            transform: translate(-20%,-50%);
+        }
+
+        & .padding-bottom-md {
+            padding-bottom: 1.5rem;
+            padding-top: 1.5rem;
+        }
+    }
+}
+
 .di {
     padding: 5rem;
 
@@ -282,7 +352,6 @@ body {
                 color: $light-blue;
                 font-size: 1.5rem;
                 text-align: center;
-                padding-bottom: .7rem;
     
                 @media (max-width: 575px) {
                     font-size: 1rem;
@@ -302,8 +371,7 @@ body {
 
         & iframe {
             @media (max-width: 575px) {
-                width: 50%;
-                height: 50%;
+                width: 80%;
             }
         }
     }

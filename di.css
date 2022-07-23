@@ -1,6 +1,7 @@
 @charset "UTF-8";
 body .navbar {
   padding: 0;
+  transition: top 0.7s;
 }
 body .navbar .navbar-brand {
   margin-left: 1.5%;

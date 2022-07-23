@@ -4,6 +4,7 @@ body {
 }
 body .navbar {
   padding: 0;
+  transition: top 0.7s;
 }
 body .navbar .navbar-brand {
   margin-left: 1.5%;
@@ -289,26 +290,6 @@ body .about-me {
     gap: 1rem;
   }
 }
-body .about-me h3 {
-  font-family: "Inter", sans-serif;
-  text-transform: uppercase;
-  color: #816797;
-  text-align: center;
-  font-size: 2.5rem;
-}
-body .about-me p {
-  color: black;
-  font-family: "Inter", sans-serif;
-  font-size: 1.3rem;
-  line-height: 1.5;
-  text-align: justify;
-  margin-bottom: 2rem;
-}
-body .about-me p mark {
-  background-color: rgba(129, 103, 151, 0.7176470588);
-  color: white;
-  font-weight: 545;
-}
 body .about-me .about-me-body {
   flex: 1;
 }
@@ -326,7 +307,7 @@ body .about-me .about-me-body h3 {
 }
 body .about-me .about-me-body p {
   color: #343434;
-  font-size: 18px;
+  font-size: 1.3rem;
   line-height: 1.5;
   margin-bottom: 1rem;
   text-align: justify;
@@ -336,6 +317,11 @@ body .about-me .about-me-body p {
   body .about-me .about-me-body p {
     font-size: 1rem;
   }
+}
+body .about-me .about-me-body p mark {
+  background-color: rgba(129, 103, 151, 0.7176470588);
+  color: white;
+  font-weight: 545;
 }
 body .about-me .carousel {
   flex: 0.6;

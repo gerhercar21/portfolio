@@ -1,6 +1,7 @@
 @charset "UTF-8";
 body .navbar {
   padding: 0;
+  transition: top 0.7s;
 }
 body .navbar .navbar-brand {
   margin-left: 1.5%;
@@ -109,14 +110,13 @@ body .actions button:hover {
 }
 @media (max-width: 575px) {
   .presentation .col-pres2 svg {
-    width: 120%;
-    margin-left: -10%;
+    width: 80%;
+    margin-left: 20%;
   }
 }
 @media (max-width: 575px) {
   .presentation .col-pres2 {
     overflow: hidden;
-    margin-left: -10%;
   }
 }
 .presentation .col-pres1 {
@@ -125,7 +125,7 @@ body .actions button:hover {
 }
 @media (max-width: 575px) {
   .presentation .col-pres1 {
-    width: 60%;
+    width: 100%;
   }
 }
 .presentation h1 {
@@ -194,6 +194,11 @@ body .actions button:hover {
   top: 1rem;
   right: 1rem;
 }
+@media (max-width: 575px) {
+  .presentation .social-media::before {
+    width: 200%;
+  }
+}
 .presentation .social-media::after {
   display: block;
   content: "";
@@ -204,6 +209,12 @@ body .actions button:hover {
   position: relative;
   top: 1rem;
   right: -1rem;
+}
+@media (max-width: 575px) {
+  .presentation .social-media::after {
+    width: 200%;
+    right: 0;
+  }
 }
 
 .section-divider {

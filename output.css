@@ -213,10 +213,15 @@ body .presentation .social-media {
 body .presentation .social-media li {
   width: 10%;
 }
+@media (max-width: 575px) {
+  body .presentation .social-media li {
+    width: 15%;
+  }
+}
 body .presentation .social-media a svg {
   fill: white;
-  width: 50%;
-  height: 50%;
+  width: 2rem;
+  height: 2rem;
 }
 @media (max-width: 575px) {
   body .presentation .social-media a svg {
@@ -227,11 +232,11 @@ body .presentation .social-media a svg {
 body .presentation .social-media a svg:hover {
   fill: #191654;
 }
-body .presentation .social-media #LinkedIn {
-  padding-left: 2rem;
+body .presentation .social-media #GitHub {
+  padding-left: 1rem;
 }
 @media (max-width: 575px) {
-  body .presentation .social-media #LinkedIn {
+  body .presentation .social-media #GitHub {
     padding-left: 0;
   }
 }

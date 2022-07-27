@@ -125,18 +125,26 @@ body .actions button:hover {
   margin-top: 3.5%;
   padding-left: 0;
   margin-left: 0;
-  padding-right: 3rem;
+  padding-right: 5rem;
 }
 @media (max-width: 575px) {
   .publi-head .social-media {
-    margin-top: 15%;
+    margin-top: 10%;
     padding-right: 0;
+  }
+}
+.publi-head .social-media li {
+  width: 10%;
+}
+@media (max-width: 575px) {
+  .publi-head .social-media li {
+    width: 15%;
   }
 }
 .publi-head .social-media a svg {
   fill: white;
-  width: 100%;
-  height: 100%;
+  width: 2rem;
+  height: 2rem;
 }
 @media (max-width: 575px) {
   .publi-head .social-media a svg {
@@ -148,7 +156,7 @@ body .actions button:hover {
   fill: #191654;
 }
 .publi-head .social-media #GitHub {
-  padding-left: 2rem;
+  padding-left: 1rem;
 }
 @media (max-width: 575px) {
   .publi-head .social-media #GitHub {
@@ -168,7 +176,8 @@ body .actions button:hover {
 }
 @media (max-width: 575px) {
   .publi-head .social-media::before {
-    width: 200%;
+    width: 30%;
+    top: 0.8rem;
   }
 }
 .publi-head .social-media::after {
@@ -184,8 +193,9 @@ body .actions button:hover {
 }
 @media (max-width: 575px) {
   .publi-head .social-media::after {
-    width: 200%;
+    width: 30%;
     right: 0;
+    top: 0.8rem;
   }
 }
 

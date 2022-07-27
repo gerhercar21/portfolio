@@ -234,12 +234,16 @@ body {
             
             & li {
                 width: 10%;
+
+                @media (max-width: 575px) {
+                    width: 15%;
+                }
             }
             
             & a svg {
                 fill: white;
-                width: 50%;
-                height: 50%;
+                width: 2rem;
+                height: 2rem;
 
                 @media (max-width: 575px) {
                     width: 60%;
@@ -251,8 +255,8 @@ body {
                 }
             }
 
-            #LinkedIn {
-                padding-left: 2rem;
+            #GitHub {
+                padding-left: 1rem;
                 
                 @media (max-width: 575px) {
                     padding-left: 0;

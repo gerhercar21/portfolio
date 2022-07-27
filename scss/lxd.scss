@@ -128,8 +128,8 @@ body {
             }
 
             fill: $selector;
-            width: 400%;
-            height: 200%;
+            width: 132%;
+            height: 132%;
         }
 
         @media (max-width: 575px) {
@@ -174,30 +174,38 @@ body {
         margin-top: 3.5%;
         padding-left: 0;
         margin-left: 0;
-        padding-right: 3rem;
+        padding-right: 5rem;
 
         @media (max-width: 575px) {
             margin-top: 10%;
             padding-right: 0;
         }
         
+        & li {
+            width: 10%;
+
+            @media (max-width: 575px) {
+                width: 15%;
+            }
+        }
+        
         & a svg {
             fill: white;
-            width: 100%;
-            height: 100%;
-
-            &:hover {
-                fill: $dark-blue;
-            }
+            width: 2rem;
+            height: 2rem;
 
             @media (max-width: 575px) {
                 width: 60%;
                 height: 60%;
             }
+
+            &:hover {
+                fill: $dark-blue;
+            }
         }
 
         #GitHub {
-            padding-left: 2rem;
+            padding-left: 1rem;
             
             @media (max-width: 575px) {
                 padding-left: 0;
@@ -208,9 +216,10 @@ body {
     .social-media::before {
 
         @media (max-width: 575px) {
-            width: 200%;
+            width: 30%;
+            top: .8rem;
         }
-
+        
         display: block;
         content: "";
         height: 1px;
@@ -225,10 +234,11 @@ body {
     .social-media::after {
 
         @media (max-width: 575px) {
-            width: 200%;
+            width: 30%;
             right: 0;
+            top: .8rem;
         }
-        
+
         display: block;
         content: "";
         height: 1px;

@@ -105,8 +105,8 @@ body .actions button:hover {
 }
 .presentation .col-pres2 svg {
   fill: #816797;
-  width: 500%;
-  height: 300%;
+  width: 166.5%;
+  height: 166.5%;
 }
 @media (max-width: 575px) {
   .presentation .col-pres2 svg {
@@ -154,7 +154,7 @@ body .actions button:hover {
   margin-top: 3.5%;
   padding-left: 0;
   margin-left: 0;
-  padding-right: 3rem;
+  padding-right: 5rem;
 }
 @media (max-width: 575px) {
   .presentation .social-media {
@@ -162,10 +162,18 @@ body .actions button:hover {
     padding-right: 0;
   }
 }
+.presentation .social-media li {
+  width: 5%;
+}
+@media (max-width: 575px) {
+  .presentation .social-media li {
+    width: 15%;
+  }
+}
 .presentation .social-media a svg {
   fill: white;
-  width: 100%;
-  height: 100%;
+  width: 2rem;
+  height: 2rem;
 }
 @media (max-width: 575px) {
   .presentation .social-media a svg {
@@ -177,7 +185,7 @@ body .actions button:hover {
   fill: #191654;
 }
 .presentation .social-media #GitHub {
-  padding-left: 2rem;
+  padding-left: 1rem;
 }
 @media (max-width: 575px) {
   .presentation .social-media #GitHub {
@@ -197,7 +205,8 @@ body .actions button:hover {
 }
 @media (max-width: 575px) {
   .presentation .social-media::before {
-    width: 200%;
+    width: 30%;
+    top: 0.8rem;
   }
 }
 .presentation .social-media::after {
@@ -213,8 +222,9 @@ body .actions button:hover {
 }
 @media (max-width: 575px) {
   .presentation .social-media::after {
-    width: 200%;
+    width: 30%;
     right: 0;
+    top: 0.8rem;
   }
 }
 

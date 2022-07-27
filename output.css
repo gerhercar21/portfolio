@@ -202,7 +202,7 @@ body .presentation .social-media {
   margin-top: 3.5%;
   padding-left: 0;
   margin-left: 0;
-  padding-right: 3rem;
+  padding-right: 5rem;
 }
 @media (max-width: 575px) {
   body .presentation .social-media {
@@ -210,10 +210,13 @@ body .presentation .social-media {
     padding-right: 0;
   }
 }
+body .presentation .social-media li {
+  width: 10%;
+}
 body .presentation .social-media a svg {
   fill: white;
-  width: 100%;
-  height: 100%;
+  width: 50%;
+  height: 50%;
 }
 @media (max-width: 575px) {
   body .presentation .social-media a svg {
@@ -224,11 +227,11 @@ body .presentation .social-media a svg {
 body .presentation .social-media a svg:hover {
   fill: #191654;
 }
-body .presentation .social-media #GitHub {
+body .presentation .social-media #LinkedIn {
   padding-left: 2rem;
 }
 @media (max-width: 575px) {
-  body .presentation .social-media #GitHub {
+  body .presentation .social-media #LinkedIn {
     padding-left: 0;
   }
 }
@@ -245,7 +248,8 @@ body .presentation .social-media::before {
 }
 @media (max-width: 575px) {
   body .presentation .social-media::before {
-    width: 200%;
+    width: 30%;
+    top: 0.8rem;
   }
 }
 body .presentation .social-media::after {
@@ -261,8 +265,9 @@ body .presentation .social-media::after {
 }
 @media (max-width: 575px) {
   body .presentation .social-media::after {
-    width: 200%;
+    width: 30%;
     right: 0;
+    top: 0.8rem;
   }
 }
 body .section-divider {

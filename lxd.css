@@ -164,7 +164,7 @@ body .actions button:hover {
   }
 }
 .presentation .social-media li {
-  width: 10%;
+  width: 5%;
 }
 @media (max-width: 575px) {
   .presentation .social-media li {

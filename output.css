@@ -211,7 +211,7 @@ body .presentation .social-media {
   }
 }
 body .presentation .social-media li {
-  width: 10%;
+  width: 5%;
 }
 @media (max-width: 575px) {
   body .presentation .social-media li {
